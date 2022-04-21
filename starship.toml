@@ -1,0 +1,23 @@
+format = """
+$directory\
+$vcsh\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$line_break\
+$character"""
+
+add_newline = true
+
+[character]
+format = "$symbol"
+success_symbol = "[❯](bold green) "
+error_symbol = "[✗](bold red) "
+
+[directory]
+style = "blue"
+truncate_to_repo = false
+truncation_length = 5
+format = "[$path]($style) "
